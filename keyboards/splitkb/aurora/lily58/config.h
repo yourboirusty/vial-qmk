@@ -15,8 +15,11 @@
  */
 
 #pragma once
-
+#undef RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_SLEEP
+#define RGBLLIGHT_TIMEOUT 10_000
+#define LED_MATRIX_SLEEP
 // Not yet available in `info.json`
 #ifdef OLED_ENABLE
-#   define OLED_FONT_H "keyboards/splitkb/aurora/lily58/glcdfont.c"
+#    define OLED_FONT_H "keyboards/splitkb/aurora/lily58/glcdfont.c"
 #endif
